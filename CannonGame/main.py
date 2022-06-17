@@ -568,7 +568,9 @@ def Main():
                 wutt1 = False
                 if (DoubleCastUpgrade != 5): # we bought an upgrade
                     wutt1 = Upgrade0B.TestIfWasButton(mousePos)
-                wutt2 = Upgrade1B.TestIfWasButton(mousePos)
+                wutt2 = False
+                if (TowerUpgrade != 5):
+                    wutt2 = Upgrade1B.TestIfWasButton(mousePos)
                 wutt3 = Upgrade2B.TestIfWasButton(mousePos)
                 wutt4 = False
                 if (ReloadOnFire == 1): # we bought another upgrade 
